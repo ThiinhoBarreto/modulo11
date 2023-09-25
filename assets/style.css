@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fjalla+One&family=Poppins:wght@300;400;600;700;900&family=Roboto:wght@100;400;500;900&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Fjalla One', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #f5d6df6c;
+}
+
+.main {
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 8px;
+    
+}
+
+header {
+    background-color: #c5616b;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+
+header img {
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 8%;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li, a{
+    display:inline-block;
+    margin-right: 4px;
+    color: #ffffff;
+    font-family: 'Fjalla One';
+    text-decoration: none;
+}
+
+#sobre {
+    color: #662027;
+    margin: 40px 0;
+
+}
+
+#sobre img {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    border: 4px solid #c5616b;
+    margin-right: 16px;
+}
+
+#sobre p {
+    text-align: justify;
+    margin-right: 8px;
+}
+
+hr {
+    display: block;
+    margin-top: 40px;
+    border-style: inset;
+    border-width: 1px;
+    border: 1px solid #c5616b23;
+}
+
+h2 {
+    color: #662027;
+    margin-left: 8px;
+    margin: 40px 8px;
+    font-family: 'Fjalla One';
+    font-weight: normal;
+}
+
+.container-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px 8px;
+    
+}
+.container-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5d6df9a;
+    height: 350px;
+}
+
+.container-produto img {
+    background-size: cover;
+    max-width: 210px;
+    max-height: 210px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container-produto button {
+    background-color: #c5616b;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 24px;
+    display: none;
+}
+
+.container-produto:hover button {
+    display: block;
+}
+
+.container-produto button:hover {
+    cursor: pointer;
+    background-color: #7f9990;
+}
+
+.descricao-produto {
+    width: 80%;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: small;
+    margin-top: 8px;
+    color: #662027;
+}
+
+#contato .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #c5616b;
+    margin-bottom: 40px;
+}
+
+form input, textarea, button {
+    display: block;
+    width: 50vw;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+input:focus, textarea:focus, button:focus{
+    outline-color: #c5616b;
+}
+
+form textarea {
+    resize: none;
+    height: 260px;
+}
+
+form button {
+    background-color: #7f9990;
+    color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'bungee', cursive;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #c5616b;
+    cursor: pointer;
+}
+
+form button:focus:hover {
+    outline: medium solid #7f9990;
+}
+
+.social-redes img {
+    width: 36px;
+}
+
+.social-redes li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-redes li a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #c5616b;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 8px 0;
+}
+footer .container{
+    font-family: 'Fjalla One';
+    padding: 0 8px;
+}
+
+footer .container div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    font-size: small;  
+    color: #662027;  
+}
+
+footer h3 {
+    margin-bottom: 8px;
+    color: #e7eeeb;
+}
+
+footer span {
+    color: #e7eeeb;
+    font-weight: normal;
+}
+
+.fa {
+    margin-top:16px;
+}
+
+.bnt-flutuante {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
+
+.animation {
+    animation: alerta 1.5s infinite;
+}
+
+@keyframes alerta {
+    0% {
+        transform: scale();
+    }
+    70% {
+        transform: scale();
+        box-shadow: 0 0 0 50px rgba(69, 152, 27, 0);
+    }
+    100% {
+        transform: scale();
+        box-shadow: 0 0 0 0 rgba(69, 152, 27, 0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header .container{
+        max-width: 85vw;
+    }
+    .main {
+        max-width: 85vw;
+        justify-content: center;
+    }
+
+    #sobre .container{
+        flex-direction: column;
+    }
+
+    .container-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .bnt-flutuante {
+        bottom: 80px;
+    }
+
+    .container-destaques {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .container{
+        max-width: 85vw;
+        flex-direction: column;
+    }
+
+    .social-redes img {
+        width: 28px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    header .container{
+        max-width: 50vw;
+    }
+    .main {
+        max-width: 50vw;
+        justify-content: center;
+    }
+
+    #sobre .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 60vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .container-produtos {
+        grid-template-columns: 1fr 1fr;
+        max-width: 50vw;
+        justify-content: center;
+    }
+
+    .bnt-flutuante {
+        bottom: 80px;
+    }
+
+    footer .container{
+        max-width: 85vw;
+    }
+
+    .social-redes img {
+        width: 28px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    header .container{
+        max-width: 85vw;
+    }
+    .main {
+        max-width: 85vw;
+        justify-content: center;
+    }
+
+    .container-produtos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bnt-flutuante {
+        bottom: 80px;
+    }
+
+    .container-destaques {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .container{
+        max-width: 85vw;
+    }
+
+    .social-redes img {
+        width: 28px;
+    }
+} 
+
+
+
